@@ -5,13 +5,13 @@ import ThemeProvider from 'react-toolbox/lib/ThemeProvider';
 import Button from 'react-toolbox/lib/button/Button';
 import AppBar from 'react-toolbox/lib/app_bar/AppBar'
 import 'material-design-icons/iconfont/material-icons.css'
-import Card from 'react-toolbox/lib/card/Card'
-import CardMedia from 'react-toolbox/lib/card/CardMedia'
-import CardTitle from 'react-toolbox/lib/card/CardTitle'
-import CardText from 'react-toolbox/lib/card/CardText'
-import CardActions from 'react-toolbox/lib/card/CardActions'
+// import Card from 'react-toolbox/lib/card/Card'
+// import CardMedia from 'react-toolbox/lib/card/CardMedia'
+// import CardTitle from 'react-toolbox/lib/card/CardTitle'
+// import CardText from 'react-toolbox/lib/card/CardText'
+// import CardActions from 'react-toolbox/lib/card/CardActions'
  
-// import {Card, CardMedia, CardTitle, CardText, CardActions} from 'react-toolbox/lib/card'
+import {Card, CardMedia, CardTitle, CardText, CardActions} from 'react-toolbox/lib/card'
 
 
 // import Link from 'react-toolbox/lib/link/Link'
@@ -32,7 +32,16 @@ class App extends Component {
         </Navigation> */}
       </AppBar>
       {/* <Button label='Bookmark' raised primary/> */}
-      <Card style={{width: '350px'}}>
+      <Card>
+            <CardTitle
+              leftIcon="menu"
+              title="From"/>
+
+            <CardTitle
+              leftIcon="menu"
+              title="To"/>
+
+
     <CardTitle
       avatar="https://placeimg.com/80/80/animals"
       title="Avatar style title"
